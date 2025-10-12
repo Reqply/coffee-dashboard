@@ -1,0 +1,122 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #faf7f2 0%, #e8dfd3 100%);
+  color: #5a3e1b;
+  line-height: 1.6;
+}
+
+/* Section Card Layout */
+.section {
+  background: #fff8f0;
+  border-radius: 16px;
+  padding: 30px;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+  box-shadow: 0 10px 25px rgba(139, 69, 19, 0.1);
+}
+
+/* Hero Section */
+#hero {
+  background: #fdf3e7;
+  text-align: center;
+  padding: 80px 20px;
+  margin-top: 0;
+  font-size: 2rem; /* reduced from 2.8rem */
+  font-weight: bold;
+  color: #5a3e1b;
+}
+
+/* Dropdown controls */
+#controls {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Add a small left margin for the second label (bean filter) */
+#controls label[for="beanSelect"] {
+  margin-left: 20px;
+}
+
+select {
+  font-size: 16px;
+  padding: 8px 14px;
+  border: 2px solid #deb887;
+  border-radius: 6px;
+  background: #fff8f0;
+  color: #5a3e1b;
+  cursor: pointer;
+}
+
+/* Chart Containers */
+#map,
+#lineChart,
+#barChart,
+#topCountriesChart,
+#topConsumptionChart {
+  margin-top: 20px;
+  padding: 15px;
+  background: #fdf7f2;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(139, 69, 19, 0.1);
+}
+
+/* Headings */
+h1, h2 {
+  font-family: 'Georgia', serif;
+  color: #5a3e1b;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #8b4513;
+  padding-bottom: 5px;
+}
+
+p {
+  margin: 10px 0 20px;
+  font-size: 1rem;
+  max-width: 800px;
+  color: #4e3a24;
+}
+
+/* New styles for chart + text side-by-side layout */
+.chart-text-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.chart-left {
+  flex: 1 1 400px; /* allow to shrink/grow, minimum 400px */
+  min-width: 300px;
+}
+
+.text-right {
+  flex: 1 1 300px;
+  min-width: 280px;
+  font-size: 1rem;
+  color: #4e3a24;
+  line-height: 1.5;
+}
+
+/* Responsive: stack vertically on smaller screens */
+@media (max-width: 800px) {
+  .chart-text-container {
+    flex-direction: column;
+  }
+  .chart-left, .text-right {
+    min-width: 100%;
+  }
+}
