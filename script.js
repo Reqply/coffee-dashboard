@@ -398,7 +398,7 @@ function renderTopConsumptionChart(data, year) {
       x: {
         field: "Consumption",
         type: "quantitative",
-        axis: {title: "Coffee Consumption (simulated)", labelFontSize: 13, titleFontSize: 15}
+        axis: {title: "Coffee Consumption", labelFontSize: 13, titleFontSize: 15}
       },
       color: {
         field: "Consumption",
@@ -467,3 +467,4 @@ d3.csv(csvUrl).then(data => {
 
   updateDashboard();
 }).catch(console.error);
+
