@@ -22,7 +22,7 @@ body {
 #hero {
   background: #fdf3e7;
   text-align: center;
-  padding: 80px 20px;
+  padding: 35px 20px;
   margin-top: 0;
   font-size: 2rem; /* reduced from 2.8rem */
   font-weight: bold;
@@ -120,3 +120,4 @@ p {
     min-width: 100%;
   }
 }
+
