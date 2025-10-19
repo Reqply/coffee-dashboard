@@ -274,7 +274,7 @@ function renderLineChart(data) {
     data: { values: productionByYear },
     mark: { type: "line", point: true, tooltip: true, color: "#a0522d" },
     encoding: {
-      x: { field: "Year", type: "quantitative", axis: {title: "Year", labelFontSize: 13, titleFontSize: 15} },
+      x: { field: "Year", type: "quantitative", axis: {title: "Year", labelFontSize: 13, titleFontSize: 15, format: "d"} },
       y: { field: "TotalProduction", type: "quantitative", axis: {title: "Total Production (tons)", labelFontSize: 13, titleFontSize: 15} },
       tooltip: [
         {field: "Year", type: "temporal", title: "Year"},
@@ -474,6 +474,7 @@ d3.csv(csvUrl).then(data => {
 
   updateDashboard();
 }).catch(console.error);
+
 
 
 
