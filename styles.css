@@ -29,6 +29,15 @@ body {
   color: #5a3e1b;
 }
 
+#hero h1 {
+  margin: 0;               /* remove default h1 top/bottom margins */
+  padding: 6px 0;          /* tiny vertical padding if you want separation */
+  font-size: 1.8rem;       /* visual size of the title — adjust to taste */
+  line-height: 1.05;       /* tighten line-height so text doesn't "breathe" */
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  color: #5a3e1b;
+}
 /* Dropdown controls */
 #controls {
   text-align: center;
@@ -120,4 +129,5 @@ p {
     min-width: 100%;
   }
 }
+
 
