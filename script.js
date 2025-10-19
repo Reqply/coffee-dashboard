@@ -228,7 +228,7 @@ function renderMap(data, year) {
         type: "quantitative",
         scale: {scheme: "reds"},
         legend: {
-          title: `Production (metric tons) in ${year}`,
+          title: `Production (tons)`,
           labelFontSize: 13,
           titleFontSize: 15
         }
@@ -474,6 +474,7 @@ d3.csv(csvUrl).then(data => {
 
   updateDashboard();
 }).catch(console.error);
+
 
 
 
