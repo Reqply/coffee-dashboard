@@ -196,6 +196,13 @@ function renderMap(data, year) {
     $schema: "https://vega.github.io/schema/vega-lite/v5.json",
     width: 700,
     height: 400,
+    title: {
+    text: "Coffee Production Over World",
+    fontSize: 20,
+    font: "Arial",
+    anchor: "middle",
+    color: "#4b3832",
+    dy: -10},
     data: {
       url: "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json",
       format: {
@@ -467,4 +474,5 @@ d3.csv(csvUrl).then(data => {
 
   updateDashboard();
 }).catch(console.error);
+
 
